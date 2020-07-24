@@ -18,7 +18,7 @@ class String
     hold_sentences = []
     hold_sentences = self.split(/\.|\?|\!/)
     #binding.pry
-    hold_sentences = hold_sentences.reject(&:blank?)
+    hold_sentences = hold_sentences.reject(&:empty?)
     hold_sentences.count
   end
 
